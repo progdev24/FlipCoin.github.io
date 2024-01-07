@@ -16,6 +16,16 @@ body{
     border-radius: 10px;
     box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
 }
+@media only screen and (max-width: 460px){
+    .container{
+        width: 80vmin;
+    }
+}
+@media only screen and (max-width: 336px){
+    .container{
+        width: 90vmin;
+    }
+}
 .coin{
     height: 150px;
     width: 150px;
@@ -62,9 +72,7 @@ body{
     margin-top: 55px;
     margin-bottom: 40px;
     box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
-}
-.stats p:nth-last-child(1){
-    margin-left: 50%;
+    justify-content: space-between;
 }
 .buttons{
     display: flex;
@@ -73,7 +81,7 @@ body{
 button{
     padding: 1rem;
     border: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
     border-radius: 15px;
     cursor: pointer;
 }
